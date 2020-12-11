@@ -1,8 +1,22 @@
 html{
     font-size: 15px;
 }
+.box{
+  flex: 1 1 150px;
+  flex: 2 1 150px; 
+  margin: 5px;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div {
+  flex: 1;       
+}
 
 body{
+    display: flex;
     background-image: url("download (1).jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -10,14 +24,16 @@ body{
     height: auto;
 }
 
+
 img {
-    max-width: 75%;
-    display: block;
+  width: 90%;        
+  min-width: 200px;
+  display: flex;
+  flex-wrap: wrap;  
   }
   
   #img-div {
-    position: absolute;
-    right: 10px;
+    position: fixed;
     width: 250px;
     padding: 10px;
     background-image: url(5728867753e69e71c6995b955be0f654.jpg);
@@ -35,8 +51,7 @@ img {
     }
   }
   #img-div2 {
-    position: absolute;
-    right: 300px;
+    position: fixed;
     width: 250px;
     padding: 10px;
     background-image: url(5728867753e69e71c6995b955be0f654.jpg);
@@ -45,9 +60,7 @@ img {
     margin: 0;
   }
   #img-div3 {
-    position: absolute;
-    right: 200px;
-    bottom: 20px;
+    position: fixed;
     width: 250px;
     padding: 10px;
     background-image: url(5728867753e69e71c6995b955be0f654.jpg);
